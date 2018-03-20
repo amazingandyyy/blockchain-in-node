@@ -6,7 +6,8 @@
   "scripts": {
     "start": "NODE_ENV=production node ./dist/server.js",
     "test": "eslint .",
-    "dev": "babel-watch ./src/server.js",
+    "dev": "babel-watch ./src/server.js 3000",
+    "node": "babel-watch ./src/server.js",
     "build": "babel -d ./dist ./src -s",
     "precommit": "npm run test",
     "prepush": "npm run test"

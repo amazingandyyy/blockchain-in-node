@@ -1,17 +1,7 @@
-import express from 'express';
-import blockchain from './ledger/router';
-import bodyParser from 'body-parser';
+import app from './app';
 
-const app = express();
+let port = process.argv[2] || 3000;
 
-app.use(bodyParser.json());
-
-app.get('/', (req, res)=>{
-  res.send('connected');
-})
-
-app.use('/blockchain', blockchain)
-
-app.listen(8080, ()=>{
-  console.log('listening on 8080');
+app.listen(port || 3000, ()=>{
+  console.log(`node is running on port ${port || 3000}`);
 })
