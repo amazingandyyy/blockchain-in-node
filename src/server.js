@@ -1,16 +1,14 @@
-import Block from './block';
-import Blockchain from './blockchain';
-import Transaction from './transaction';
+import express from 'express';
+import blockchain from './ledger/router';
 
-let genesisBlock = new Block();
-let blockchain = new Blockchain(genesisBlock);
+const app = express();
 
-let transaction = new Transaction('Andy', 'John', 10);
-let nextBlock = blockchain.buildNextBlock([transaction]);
-blockchain.addBlock(nextBlock);
+app.get('/', (req, res)=>{
+  res.send('connected');
+})
 
-let transaction2 = new Transaction('John', 'Andy', 5);
-let nextBlock2 = blockchain.buildNextBlock([transaction2]);
-blockchain.addBlock(nextBlock2);
+app.use('/blockchain', blockchain)
 
-console.log(blockchain);
+app.listen(8080, ()=>{
+  console.log('listening on 8080');
+})
