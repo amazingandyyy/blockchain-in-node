@@ -15,8 +15,9 @@ class Block{
   }
 
   addTransaction(transaction){
-    this.transactions.push(transaction);
+    this.transactions.push(transaction)
   }
+
 }
 
 export default Block;

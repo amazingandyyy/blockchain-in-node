@@ -1,21 +1,47 @@
+import Block from './block';
 import sha256 from 'js-sha256';
 
 class Blockchain{
   constructor(genesisBlock){
-    this.block = []
+    this.blocks = []
     this.addBlock(genesisBlock)
   }
 
   addBlock(block){
-    if(this.block.length == 0){
+    if(this.blocks.length == 0){
       block.previousHash = '000000000000000'
       block.hash = this.generateHash(block);
     }
-    this.block.push(block);
+    this.blocks.push(block);
+  }
+
+  buildNextBlock(transactions){
+    let block = new Block();
+
+    transactions.forEach((transaction)=>{
+      block.addTransaction(transaction);
+    })
+
+    let previousBlock = this.getPreviousBlock();
+    block.index = this.blocks.length
+    block.previousHash = previousBlock.hash
+    block.hash = this.generateHash(block)
+
+    return block;
+  }
+
+  getPreviousBlock(){
+    return this.blocks[this.blocks.length-1]
   }
 
   generateHash(block){
-    return sha256(block.key);
+    let hash = sha256(block.key);
+    while(!hash.startsWith('aaa')){
+      block.nonce += 1
+      hash = sha256(block.key)
+      console.log(hash)
+    }
+    return hash;
   }
 }
 
