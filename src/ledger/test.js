@@ -14,7 +14,6 @@ function test(){
   let nextBlock2 = blockchain.buildNextBlock([transaction2]);
   blockchain.addBlock(nextBlock2);
 
-  console.log(blockchain);
   return blockchain;
 }
 

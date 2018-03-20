@@ -15,7 +15,7 @@ class Blockchain{
     this.blocks.push(block);
   }
 
-  buildNextBlock(transactions){
+  mineNextBlock(transactions){
     let block = new Block();
 
     transactions.forEach((transaction)=>{
