@@ -6,7 +6,7 @@
   "scripts": {
     "start": "NODE_ENV=production node ./dist/server.js",
     "test": "eslint .",
-    "dev": "babel-watch app.js",
+    "dev": "babel-watch ./src/server.js",
     "build": "babel -d ./dist ./src -s",
     "precommit": "npm run test",
     "prepush": "npm run test"
@@ -19,9 +19,7 @@
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-env": "^1.6.1",
     "babel-preset-es2015": "^6.24.1",
-    "babel-watch": "^2.0.7"
-  },
-  "dependencies": {
+    "babel-watch": "^2.0.7",
     "eslint": "^4.14.0",
     "eslint-config-standard": "^10.2.1",
     "eslint-plugin-es5": "^1.1.0",
@@ -32,5 +30,8 @@
     "eslint-plugin-security": "^1.4.0",
     "eslint-plugin-standard": "^3.0.1",
     "husky": "^0.14.3"
+  },
+  "dependencies": {
+    "js-sha256": "^0.9.0"
   }
 }
