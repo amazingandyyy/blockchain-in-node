@@ -14,7 +14,7 @@ When it comes to blockchain, most developers only learn **how to do Dapp** with 
 - How to resolve basic conflicts in blockchain
 - How to use sha256 to do PoW(Proof of Work)
 
-## Run it
+## Run it on your machine
 ```
 $ npm clone https://github.com/amazingandyyy/blockchain-in-js.git
 $ npm i
@@ -26,7 +26,7 @@ $ npm run nodes 3001
 $ npm run nodes 3002
 ```
 
-$$ Routes
+## Routes/HTTP Endpoint
 ```
 GET /blockchain
 GET /blockchain/mine
