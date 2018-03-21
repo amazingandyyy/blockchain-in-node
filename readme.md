@@ -1,4 +1,4 @@
-# blockchain-in-js [![Build Status](https://travis-ci.org/amazingandyyy/blockchain-in-js.svg?branch=master)](https://travis-ci.org/amazingandyyy/blockchain-in-js)
+# blockchain-in-node [![Build Status](https://travis-ci.org/amazingandyyy/blockchain-in-node.svg?branch=master)](https://travis-ci.org/amazingandyyy/blockchain-in-node)
 
 This is an afternoon-project, a blockchain built in node, supporting PoW.
 
@@ -21,7 +21,7 @@ When it comes to blockchain, most developers only learn **how to do Dapp** with 
 
 ## Run it on your machine
 ```
-$ npm clone https://github.com/amazingandyyy/blockchain-in-js.git
+$ npm clone https://github.com/amazingandyyy/blockchain-in-node.git
 $ npm i
 $ npm run dev // default on port 3000
 
@@ -44,7 +44,7 @@ GET /blockchain/nodes // get a list of all nodes
 
 
 ### There are many can be done: 
-Please feel free to fork, clone or send me [PR](https://github.com/amazingandyyy/blockchain-in-js/pulls)
+Please feel free to fork, clone or send me [PR](https://github.com/amazingandyyy/blockchain-in-node/pulls)
 - use `socket` instead of http, to broadcast state
 - implement signature, public key, private key, user address system
 - proof of work and rewarding system
@@ -60,6 +60,6 @@ Please feel free to fork, clone or send me [PR](https://github.com/amazingandyyy
 Andy Chen([amazingandyyy](https://github.com/amazingandyyy))
 
 ### LICENSE
-[MIT](https://github.com/amazingandyyy/blockchain-in-js/blob/master/LICENSE)
+[MIT](https://github.com/amazingandyyy/blockchain-in-node/blob/master/LICENSE)
 
 [![JavaScript Style Guide](https://cdn.rawgit.com/standard/standard/master/badge.svg)](https://github.com/standard/standard)

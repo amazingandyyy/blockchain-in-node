@@ -1,5 +1,5 @@
 {
-  "name": "blockchain-in-js",
+  "name": "blockchain-in-node",
   "version": "0.0.2",
   "description": "This is an afternoon-project, a blockchain built in node, supporting PoW.",
   "main": "server.js",
@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/amazingandyyy/blockchain-in-js.git"
+    "url": "git+https://github.com/amazingandyyy/blockchain-in-node.git"
   },
   "keywords": [
     "blockchain", 
