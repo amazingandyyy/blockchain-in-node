@@ -35,6 +35,7 @@
   "dependencies": {
     "body-parser": "^1.18.2",
     "express": "^4.16.3",
-    "js-sha256": "^0.9.0"
+    "js-sha256": "^0.9.0",
+    "node-fetch": "^2.1.1"
   }
 }

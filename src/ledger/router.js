@@ -1,3 +1,4 @@
+import fetch from 'node-fetch';
 import Transaction from './transaction';
 import Blockchain from './blockchain';
 import genesisBlock from './genesisBlock';
@@ -14,7 +15,11 @@ router.get('/', (req, res)=>{
 })
 
 router.get('/mine', (req, res)=>{
+  if(transactions.length < 1){
+    return res.json(blockchain.blocks[blockchain.blocks.length-1]);
+  }
   let block = blockchain.mineNextBlock(transactions)
+  transactions = [];
   blockchain.addBlock(block);
   res.json(block);
 })
@@ -26,13 +31,36 @@ router.post('/transactions', (req, res)=>{
   res.json(transactions);
 })
 
+router.get('/nodes/resolve', (req, res)=>{
+  if(nodes.length<1){
+    return res.send('No Nodes')
+  }
+  let count = 0;
+  nodes.forEach((n, i, nodes)=>{
+    let url = `http://${n.url}/blockchain`;
+    fetch(url)
+    .then(r=>r.json())
+    .then(otherChain=>{
+      count += 1;
+      if(blockchain.blocks.length < otherChain.blocks.length){
+        blockchain = otherChain;
+      }
+      if(count==nodes.length) return res.send(blockchain);
+    })
+    .catch(err=>res.send(err))
+  })
+})
+
 router.post('/nodes/register', (req, res)=>{
   let nodeList = req.body.urls;
   if(!nodeList) return res.sendStatus(500);
   nodeList.forEach((n)=>{
-    let node = new BlockchainNode(n.url);
-    nodes.push(node);
+    if(n.url !== req.headers.host){
+      let node = new BlockchainNode(n.url);
+      nodes.push(node);
+    }
   })
+
   res.json(nodes);
 })
 
