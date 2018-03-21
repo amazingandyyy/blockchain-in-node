@@ -18,12 +18,13 @@ When it comes to blockchain, most developers only learn **how to do Dapp** with 
 ```
 $ npm clone https://github.com/amazingandyyy/blockchain-in-js.git
 $ npm i
-$ npm run dev
+$ npm run dev // default on port 3000
 
 <!-- to run more nodes -->
-$ npm run nodes 3000
-$ npm run nodes 3001
-$ npm run nodes 3002
+$ npm run nodes // default on port 3000
+$ npm run nodes 3000 // listening on port 3000
+$ npm run nodes 3001 // listening on port 3001
+$ npm run nodes 3002 // listening on port 3002
 ```
 
 ## Routes/HTTP Endpoint
@@ -42,5 +43,7 @@ Andy Chen([amazingandyyy](https://github.com/amazingandyyy))
 ### LICENSE
 [MIT](https://github.com/amazingandyyy/blockchain-in-js/blob/master/LICENSE)
 
+
+## Please feel free to download, clone or send me PR, love you.
 
 [![JavaScript Style Guide](https://cdn.rawgit.com/standard/standard/master/badge.svg)](https://github.com/standard/standard)
