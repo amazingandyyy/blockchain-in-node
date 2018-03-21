@@ -14,7 +14,7 @@ router.get('/', (req, res)=>{
   res.json(blockchain);
 })
 
-router.get('/mine', (req, res)=>{
+router.POST('/mine', (req, res)=>{
   if(transactions.length < 1){
     return res.json(blockchain.blocks[blockchain.blocks.length-1]);
   }

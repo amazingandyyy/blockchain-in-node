@@ -1,7 +1,7 @@
 {
-  "name": "blockchain-in",
-  "version": "0.0.1",
-  "description": "",
+  "name": "blockchain-in-js",
+  "version": "0.0.2",
+  "description": "This is an afternoon-project, a blockchain built in node, supporting PoW.",
   "main": "server.js",
   "scripts": {
     "start": "NODE_ENV=production node ./dist/server.js",
@@ -12,6 +12,16 @@
     "precommit": "npm run test",
     "prepush": "npm run test"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amazingandyyy/blockchain-in-js.git"
+  },
+  "keywords": [
+    "blockchain", 
+    "bitcoin",
+    "ethereum",
+    "nodejs"
+  ],
   "author": "Amazingandyyy <amazingandyyy@gmail.com> (Andy Chen)",
   "license": "MIT",
   "devDependencies": {
