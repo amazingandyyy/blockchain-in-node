@@ -1,5 +1,4 @@
 # blockchain-in-js [![Build Status](https://travis-ci.org/amazingandyyy/blockchain-in-js.svg?branch=master)](https://travis-ci.org/amazingandyyy/blockchain-in-js)
-[![GitHub stars](https://img.shields.io/github/stars/Naereen/StrapDown.js.svg?style=social&label=Star&maxAge=2592000)](https://GitHub.com/Naereen/StrapDown.js/stargazers/)
 
 This is an afternoon-project, a blockchain built in node, supporting PoW.
 
@@ -41,7 +40,7 @@ GET /blockchain/nodes
 Andy Chen([amazingandyyy](https://github.com/amazingandyyy))
 
 ### LICENSE
-[MIT](https://github.com/amazingandyyy/blockchain-in-js/blob/master/LICENSE)[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]
+[MIT](https://github.com/amazingandyyy/blockchain-in-js/blob/master/LICENSE)
 
 
 [![JavaScript Style Guide](https://cdn.rawgit.com/standard/standard/master/badge.svg)](https://github.com/standard/standard)
