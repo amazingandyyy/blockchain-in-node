@@ -9,15 +9,15 @@ Node itself is a more beautiful, flexible and powerful language for internet pro
 When it comes to blockchain, most developers only learn **how to do Dapp** with ethereum, neo, or other existing infrastructure-completed project... They are fine, but using them will only let you know what you can do with them, as a result, you cannot really get the idea what you can do with blockchain itself, and what you can apply the blockchain mindset to other software projects. I think there is a better way to understand blockchain itself - to build a chain from scratch
 
 ## This is a lovely demo for 
-- How Blocks, Chain,, Keys, Nodes, transaction work with each others.
+- A general Idea of how Blocks, Chain, Mining, Nodes, Transaction work with each others.
 - How to do them in Node
 - How to resolve basic conflicts in blockchain
 - How to use sha256 to do PoW(Proof of Work)
-- No a demo for 
+- Not a demo for
   - signatures
   - address
   - production setup
-  - make you a blockchain expert
+  - making you a blockchain expert
 
 ## Run it on your machine
 ```
@@ -49,10 +49,10 @@ Please feel free to fork, clone or send me [PR](https://github.com/amazingandyyy
 - implement signature, public key, private key, user address system
 - proof of work and rewarding system
 - new PoW algorithm
-- localtion-based sharding?
+- location based sharding?
 - hide IPs / make it private!?
 - PoS, or other dBFT methods
-- dockernized, easy to setup, run a node
+- dockernized, easy to run a node
 - interactive wrappers, helper libraries(python, golang, java)...
 
 
