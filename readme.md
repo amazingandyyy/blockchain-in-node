@@ -42,9 +42,10 @@ POST /blockchain/nodes/register // add nodes urls
 GET /blockchain/nodes // get a list of all nodes
 ```
 
-
 ### There are many can be done: 
 Please feel free to fork, clone or send me [PR](https://github.com/amazingandyyy/blockchain-in-node/pulls)
+
+
 - use `socket` instead of http, to broadcast state
 - implement signature, public key, private key, user address system
 - proof of work and rewarding system
