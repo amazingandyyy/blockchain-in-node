@@ -32,18 +32,19 @@ $ npm run nodes 3001 // listening on port 3001
 $ npm run nodes 3002 // listening on port 3002
 ```
 
-## Routes/HTTP Endpoint
+## HTTP Endpoints
 ```
-GET /blockchain
-GET /blockchain/mine
-POST /blockchain/transactions
-GET /blockchain/nodes/resolve
-POST /blockchain/nodes/register
-GET /blockchain/nodes
+GET /blockchain // see the link-list itself
+GET /blockchain/mine // find the next special hash
+POST /blockchain/transactions // add new data to the chain 
+GET /blockchain/nodes/resolve // fetch the longest chain
+POST /blockchain/nodes/register // add nodes urls
+GET /blockchain/nodes // get a list of all nodes
 ```
 
-## Please feel free to fork, clone or send me PR
-## There are many can be done
+
+### There are many can be done: 
+Please feel free to fork, clone or send me PR
 - use socket instead of http, to broadcast state
 - implement signature, public, private key, user address ideneity system
 - proof of work and rewards system
