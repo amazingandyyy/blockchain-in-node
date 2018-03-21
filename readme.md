@@ -45,12 +45,13 @@ GET /blockchain/nodes // get a list of all nodes
 
 ### There are many can be done: 
 Please feel free to fork, clone or send me PR
-- use socket instead of http, to broadcast state
-- implement signature, public, private key, user address ideneity system
+- use `socket` instead of http, to broadcast state
+- implement signature, public key, private key, user address system
 - proof of work and rewards system
+- hide IPs / make it private!?
 - PoS, or other dBFT methods
-- dockernized
-- interactive wrappers, helper libraries...
+- dockernized, easy to setup, run a node
+- interactive wrappers, helper libraries(python, golang, java)...
 
 
 ### Author 
