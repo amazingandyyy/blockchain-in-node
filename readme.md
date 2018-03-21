@@ -1,4 +1,4 @@
-# blockchain-in-js [![Build Status](https://travis-ci.com/amazingandyyy/blockchain-in-js.svg?token=C7NJ8bT8vb8dmq7fMDsa&branch=master)](https://travis-ci.com/amazingandyyy/blockchain-in-js)
+# blockchain-in-js [![Build Status](https://travis-ci.org/amazingandyyy/blockchain-in-js.svg?branch=master)](https://travis-ci.org/amazingandyyy/blockchain-in-js)
 This is an afternoon-project, a blockchain built in node, supporting PoW.
 
 ### Why Node
