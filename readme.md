@@ -1,4 +1,4 @@
-# blockchain-in-js
+# blockchain-in-js [![Build Status](https://travis-ci.com/amazingandyyy/blockchain-in-js.svg?token=C7NJ8bT8vb8dmq7fMDsa&branch=master)](https://travis-ci.com/amazingandyyy/blockchain-in-js)
 This is an afternoon-project, a blockchain built in node, supporting PoW.
 
 ### Why Node
@@ -40,3 +40,5 @@ Andy Chen([amazingandyyy](https://github.com/amazingandyyy))
 
 ### LICENSE
 [MIT](https://github.com/amazingandyyy/blockchain-in-js/blob/master/LICENSE)
+
+[![JavaScript Style Guide](https://cdn.rawgit.com/standard/standard/master/badge.svg)](https://github.com/standard/standard)
