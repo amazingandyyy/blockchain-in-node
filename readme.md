@@ -44,10 +44,12 @@ GET /blockchain/nodes // get a list of all nodes
 
 
 ### There are many can be done: 
-Please feel free to fork, clone or send me PR
+Please feel free to fork, clone or send me [PR](https://github.com/amazingandyyy/blockchain-in-js/pulls)
 - use `socket` instead of http, to broadcast state
 - implement signature, public key, private key, user address system
-- proof of work and rewards system
+- proof of work and rewarding system
+- new PoW algorithm
+- localtion-based sharding?
 - hide IPs / make it private!?
 - PoS, or other dBFT methods
 - dockernized, easy to setup, run a node
