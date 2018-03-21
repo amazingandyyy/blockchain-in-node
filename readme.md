@@ -43,7 +43,7 @@ GET /blockchain/nodes // get a list of all nodes
 ```
 
 ### There are many can be done: 
-Please feel free to fork, clone or send me [PR](https://github.com/amazingandyyy/blockchain-in-node/pulls)
+Please feel free to [fork](https://github.com/amazingandyyy/blockchain-in-node#fork-destination-box), clone or send me [PR](https://github.com/amazingandyyy/blockchain-in-node/pulls)
 
 
 - use `socket` instead of http, to broadcast state
