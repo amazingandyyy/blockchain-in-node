@@ -6,7 +6,7 @@ import BlockchainNode from './blockchainNode';
 
 const router = require('express').Router();
 
-let transactions = [];
+let body = [];
 let blockchain = new Blockchain(genesisBlock);
 let nodes = [];
 
@@ -15,20 +15,20 @@ router.get('/', (req, res)=>{
 })
 
 router.post('/mine', (req, res)=>{
-  if(transactions.length < 1){
+  if(body.length < 1){
     return res.json(blockchain.blocks[blockchain.blocks.length-1]);
   }
-  let block = blockchain.mineNextBlock(transactions)
-  transactions = [];
+  let block = blockchain.generateNextBlock(body)
+  body = [];
   blockchain.addBlock(block);
   res.json(block);
 })
 
-router.post('/transactions', (req, res)=>{
+router.post('/body', (req, res)=>{
   const {from, to, amount} = req.body;
   let transaction = new Transaction(from , to ,amount)
-  transactions.push(transaction);
-  res.json(transactions);
+  body.push(transaction);
+  res.json(body);
 })
 
 router.get('/nodes/resolve', (req, res)=>{

@@ -4,18 +4,19 @@ class Block{
     this.previousHash = '';
     this.hash = '';
     this.nonce = 0;
-    this.transactions = []
+    this.timestamp = Date.now();
+    this.body = []
   }
 
   get key(){
-    return JSON.stringify(this.transactions) 
+    return JSON.stringify(this.body) 
     + this.index 
     + this.previousHash 
     + this.nonce;
   }
 
-  addTransaction(transaction){
-    this.transactions.push(transaction)
+  addBody(transaction){
+    this.body.push(transaction)
   }
 
 }

@@ -10,22 +10,22 @@ class Blockchain{
   addBlock(block){
     if(this.blocks.length == 0){
       block.previousHash = '000000000000000'
-      block.hash = this.generateHash(block);
+      block.hash = this.mineHash(block);
     }
     this.blocks.push(block);
   }
 
-  mineNextBlock(transactions){
+  generateNextBlock(body){
     let block = new Block();
 
-    transactions.forEach((transaction)=>{
-      block.addTransaction(transaction);
+    body.forEach((transaction)=>{
+      block.addBody(transaction);
     })
 
     let previousBlock = this.getPreviousBlock();
     block.index = this.blocks.length
     block.previousHash = previousBlock.hash
-    block.hash = this.generateHash(block)
+    block.hash = this.mineHash(block)
 
     return block;
   }
@@ -34,7 +34,7 @@ class Blockchain{
     return this.blocks[this.blocks.length-1]
   }
 
-  generateHash(block){
+  mineHash(block){
     let hash = sha256(block.key);
     while(!hash.startsWith('aaa')){
       block.nonce += 1
