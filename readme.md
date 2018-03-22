@@ -35,11 +35,12 @@ $ npm run nodes 3002 // listening on port 3002
 ## HTTP Endpoints
 ```
 GET /blockchain // see the link-list itself
-GET /blockchain/mine // find the next special hash
+POST /blockchain/mine // find the next special hash
 POST /blockchain/body // add new data to the chain 
+
+GET /blockchain/nodes // get a list of all nodes
 GET /blockchain/nodes/resolve // fetch the longest chain
 POST /blockchain/nodes/register // add nodes urls
-GET /blockchain/nodes // get a list of all nodes
 ```
 
 ### There are many can be done: 
